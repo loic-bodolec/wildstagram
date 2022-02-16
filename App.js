@@ -11,7 +11,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-        <Tab.Screen name="Camera" component={CameraScreen} />
+        <Tab.Screen name="Camera" component={CameraScreen} options={{ unmountOnBlur: true }} />
         <Tab.Screen name="Images" component={ImagesScreen} />
         <Tab.Screen name="Feed" component={FeedScreen} />
       </Tab.Navigator>
